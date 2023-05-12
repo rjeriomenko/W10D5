@@ -3,9 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
-import harvardArt from './data/harvardArt.js';
 
-const Root = () => {
+function Root() {
   return (
     <BrowserRouter>
       <App />
@@ -15,7 +14,7 @@ const Root = () => {
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Root />
   </React.StrictMode>,
   document.getElementById('root')
 );
