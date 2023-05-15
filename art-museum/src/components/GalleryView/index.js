@@ -1,14 +1,9 @@
 import { useParams } from "react-router-dom";
 
-const ParamManipulation = () => {
-    let { galleryId } = useParams();
-    // console.log(galleryId) // why double print? Something with routes/route???
-    return galleryId
-}
-
 const GalleryView = (props) => {
-    let galleryId = ParamManipulation();
-    const galleries = props.galleries
+    let { galleryId } = useParams();
+    const galleries = props.galleries;
+    // console.log(galleryId) // why double print? Something with routes/route???
 
     for(const gallery in galleries) {
         let gal = galleries[gallery]
