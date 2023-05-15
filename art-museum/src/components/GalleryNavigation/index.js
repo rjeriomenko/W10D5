@@ -14,7 +14,7 @@ const GalleryNavigation = (props) => {
                 return (
                 <div key={ele.id}>
                     <NavLink to={`/galleries/${ele.id}`}>
-                        {ele.name}
+                        {ele.theme}
                     </NavLink>
                 </div>
                 )

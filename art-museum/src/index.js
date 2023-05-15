@@ -12,7 +12,7 @@ function Root() {
   );
 };
 
-ReactDOM.render(
+ReactDOM.render(   ///was this originally a separate function?
   <React.StrictMode>
     <Root />
   </React.StrictMode>,
